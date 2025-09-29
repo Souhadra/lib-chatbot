@@ -207,7 +207,7 @@ def openrouter_chat(messages: List[Dict[str, str]], temperature: float = 0.2, ma
             "HTTP-Referer": "https://your-site-url.com",  # Replace with your site URL
             "X-Title": "Virtual Engineering Library Assistant",  # Replace with your site name
         },
-        model="openai/gpt-oss-20b:free",
+        model="x-ai/grok-4-fast:free",
         messages=[{"role": m["role"], "content": m["content"]} for m in messages],
         temperature=temperature,
         max_tokens=max_tokens,
